@@ -1,19 +1,19 @@
+// Bài 1: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử. 
+// Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn 
+// hoặc bằng 10.
 
-// element - Phan tu
-let students = ["Thu Hien", "Thanh Huong", "Hau", "Vu", "Phong"]; // length = 3
-//       index:    0.            1          2.      3.     4
+let numbers = []; // Mảng rỗng
 
-// students.unshift("Nam");
-// students.push("Hai");
-students.splice(1, 0, "Yen");
-students[0] = "Hien";
+for (let i = 0; i < 10; i++) {
+    let num = Number(prompt("Nhap vao 1 so nguyen"));
+    numbers.push(num);
+}
 
-for (i in students) {
-    console.log(students[i]);
-}   
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] >= 10) {
 
-
-
-
+        console.log(numbers[i]);
+    }
+}
 
 
